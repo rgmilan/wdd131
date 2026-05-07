@@ -11,8 +11,11 @@ body {
     font-size: 1.1rem;
 }
 
+/* HEADER */
+
 header {
     background-color: #1d4f7a;
+    color: white;
 }
 
 #course-title {
@@ -36,13 +39,16 @@ nav a {
     padding: 1rem;
     flex: 1;
     text-align: center;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
 nav a:hover {
     background-color: #f0b429;
     color: #111;
-    font-weight: 700;
 }
+
+/* MAIN */
 
 main {
     max-width: 1200px;
@@ -65,6 +71,8 @@ h1 {
     align-items: stretch;
 }
 
+/* CARD */
+
 .card {
     background-color: white;
     border: 1px solid #999;
@@ -79,6 +87,8 @@ h1 {
     text-align: center;
     padding: 0.8rem;
 }
+
+/* ABOUT SECTION */
 
 .about-grid {
     display: grid;
@@ -97,6 +107,8 @@ h1 {
     line-height: 1.7;
     text-align: justify;
 }
+
+/* LOCATION SECTION */
 
 h3 {
     font-family: "Oswald", sans-serif;
@@ -125,6 +137,8 @@ figcaption {
     font-size: 0.75rem;
 }
 
+/* RESOURCES CARD */
+
 .card:last-child {
     display: flex;
     flex-direction: column;
@@ -151,6 +165,8 @@ ul a:hover {
     color: #b35c00;
     font-weight: 700;
 }
+
+/* FOOTER */
 
 footer {
     background-color: #1d4f7a;
