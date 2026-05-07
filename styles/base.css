@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+    font-size: 1.1rem;
+}
+
+header {
+    background-color: #1d4f7a;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #f0b429;
+    color: #111;
+    font-weight: 700;
+}
+
+main {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 2.3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #999;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card h2 {
+    background-color: #1d4f7a;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 220px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: start;
+}
+
+.profile-photo img {
+    width: 220px;
+    height: auto;
+}
+
+.about-text p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin: 2rem auto 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.location-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.location-content img {
+    width: 180px;
+    border: 1px solid #999;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.4rem;
+    font-size: 0.75rem;
+}
+
+.card:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    line-height: 2;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+ul a {
+    color: #0645ad;
+}
+
+ul a:hover {
+    color: #b35c00;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #1d4f7a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+#lastModified {
+    color: #f0b429;
+    font-size: 0.95rem;
+}
