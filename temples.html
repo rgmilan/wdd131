@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temple Album page for WDD 131">
+    <meta name="description" content="A responsive temple album page featuring temple images, captions, and a mobile hamburger navigation menu.">
     <meta name="author" content="Argy Milan">
 
     <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
@@ -15,10 +19,8 @@
 </head>
 
 <body>
-
     <header>
         <h2>Temple Album</h2>
-
         <button id="menu" aria-label="Menu"></button>
 
         <nav>
@@ -54,7 +56,7 @@
         </figure>
 
         <figure>
-            <img src="images/cagayan-de-oro-temple.jpg" alt="Cagayan de Oro Philippines Temple">
+            <img src="images/cdo-temple.jpg" alt="Cagayan de Oro Philippines Temple">
             <figcaption>Cagayan de Oro Philippines Temple</figcaption>
         </figure>
 
@@ -77,16 +79,11 @@
             <img src="images/laoag-temple.jpg" alt="Laoag Philippines Temple">
             <figcaption>Laoag Philippines Temple</figcaption>
         </figure>
-
     </main>
 
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> 🔥 Argy Milan 🔥 Philippines
-        </p>
-
+        <p>&copy; <span id="currentyear"></span> Argy Milan | Philippines</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 </html>

@@ -1,5 +1,4 @@
 @media screen and (min-width: 900px) {
-
     header {
         display: flex;
         justify-content: space-between;
@@ -20,5 +19,4 @@
     main {
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
