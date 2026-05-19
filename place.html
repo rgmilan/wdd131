@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive country page about the Philippines with weather, data, and scenic images.">
+    <meta name="author" content="Argy Milan">
+    <title>Philippines Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/philippines-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/philippines-medium.webp" media="(min-width: 500px)">
+                <img src="images/philippines-small.webp" alt="Scenic view of the Philippines" width="1500" height="750">
+            </picture>
+        </div>
+
+        <section class="card data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 300,000 sq km</p>
+            <p><strong>Population:</strong> 117 million</p>
+            <p><strong>Capital:</strong> Manila</p>
+            <p><strong>Languages:</strong> Filipino, English</p>
+            <p><strong>Currency:</strong> Philippine Peso</p>
+            <p><strong>Time Zone:</strong> UTC +8</p>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" width="80" height="80" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temperature">29</span>°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            🔥 Argy Milan 🔥 Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
