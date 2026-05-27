@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #3b0a57;
+    --background-color: #f4f4f4;
+    --text-color: #222;
+    --card-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#page-title {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    color: var(--primary-color);
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.temple-card {
+    background-color: var(--card-color);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.temple-card h3 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.temple-card p {
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+.temple-card strong {
+    color: var(--primary-color);
+    font-variant: small-caps;
+}
+
+.temple-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.45);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
