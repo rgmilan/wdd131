@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website planning document for RG Built Corp construction services website project.">
+    <meta name="author" content="Argy Milan">
+
+    <title>RG Built Corp Site Plan</title>
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+    <header>
+        <h1>Website Planning Document</h1>
+        <h2>RG Built Corp.</h2>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Site Name</h2>
+
+            <p><strong>RG Built Corp.</strong></p>
+
+            <p>
+                This name represents a construction focused website that showcases general construction services including architectural works, civil works, and MEPF. I chose this name because it sounds professional but still personal to me as someone working in the construction industry while studying software development.
+            </p>
+
+            <p><strong>Optional domain availability:</strong> rgbuiltcorp.com</p>
+        </section>
+
+        <section>
+            <h2>Logo</h2>
+
+            <img src="images/logo.jpg" alt="RG Built Corp Logo" class="logo">
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+
+            <p>
+                The purpose of this website is to provide information about construction services, completed projects, and basic construction solutions for residential and commercial clients.
+            </p>
+
+            <ul>
+                <li>Information about general construction services</li>
+                <li>Sample construction projects</li>
+                <li>Construction scope such as architectural, electrical, plumbing, and mechanical works</li>
+                <li>Company background</li>
+                <li>Contact form for inquiries</li>
+                <li>Gallery of project photos</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+
+            <ul>
+                <li>What construction services does RG Built Corp. offer?</li>
+                <li>How can I contact the company for quotation and project inquiries?</li>
+                <li>Can I see sample finished projects before hiring the contractor?</li>
+                <li>Does the company handle electrical, plumbing, and air conditioning works too?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schemes</h2>
+
+            <p><strong>Primary Color:</strong> #00a0ce</p>
+            <p>Used for header background, navigation bar, footer, and section headings.</p>
+
+            <p><strong>Secondary Color:</strong> #F1F1F1</p>
+            <p>Used for background color, content sections, cards, and containers.</p>
+
+            <p><strong>Accent Color:</strong> #ecac00</p>
+            <p>Used for buttons, hover effects, highlights, and accents.</p>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+
+            <p><strong>Heading Font:</strong> Poppins</p>
+            <p>Used for main headings, navigation, and titles.</p>
+
+            <p><strong>Body Font:</strong> Montserrat</p>
+            <p>Used for paragraphs, general content, and forms.</p>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+
+            <h3>Mobile View</h3>
+
+            <div class="wireframe">
+                <p>LOGO</p>
+                <p>NAVIGATION</p>
+                <p>HERO IMAGE</p>
+                <p>COMPANY INFO</p>
+                <p>SERVICES</p>
+                <p>PROJECT GALLERY</p>
+                <p>CONTACT FORM</p>
+                <p>FOOTER</p>
+            </div>
+
+            <h3>Desktop View</h3>
+
+            <div class="wireframe desktop">
+
+                <div class="desktop-header">
+                    <p>LOGO</p>
+                    <p>NAVIGATION</p>
+                </div>
+
+                <p>HERO IMAGE</p>
+
+                <p>COMPANY INFO</p>
+
+                <div class="desktop-two-columns">
+                    <p>SERVICES</p>
+                    <p>PROJECT GALLERY</p>
+                </div>
+
+                <p>CONTACT FORM</p>
+
+                <p>FOOTER</p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            🔥 Argy Milan 🔥 Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.querySelector("#currentyear").textContent = new Date().getFullYear();
+
+        document.querySelector("#lastModified").textContent =
+            `Last Modified: ${document.lastModified}`;
+    </script>
+
+</body>
+</html>
