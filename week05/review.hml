@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RG Built Corp review confirmation page with localStorage counter.">
+    <meta name="author" content="Argy Milan">
+    <title>Review Confirmation | RG Built Corp</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Thank you for your review!</h2>
+            <p>Your RG Built Corp service review has been submitted successfully.</p>
+            <p>You have submitted <span id="reviewCount"></span> review(s).</p>
+            <a href="form.html">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            🔥 Argy Milan 🔥 Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
