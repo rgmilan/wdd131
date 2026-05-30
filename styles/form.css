@@ -2,9 +2,11 @@
     --primary-color: #00a0ce;
     --secondary-color: #f1f1f1;
     --accent-color: #ecac00;
-    --text-color: #000;
-    --white: #fff;
     --form-bg: #e6eef1;
+    --text-color: #000000;
+    --white: #ffffff;
+    --dark-accent: #003f52;
+    --border-color: #777777;
 }
 
 * {
@@ -52,7 +54,7 @@ legend {
 }
 
 span {
-    color: #003f52;
+    color: var(--dark-accent);
     font-size: 1rem;
 }
 
@@ -63,7 +65,7 @@ textarea {
     width: 100%;
     padding: 0.75rem;
     font-size: 1.1rem;
-    border: 1px solid #777;
+    border: 1px solid var(--border-color);
 }
 
 fieldset {
@@ -110,8 +112,9 @@ input[type="submit"] {
     font-size: 1.7rem;
     font-weight: 700;
     cursor: pointer;
-    border: 1px solid #777;
+    border: 1px solid var(--border-color);
     background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 input[type="submit"]:hover {
