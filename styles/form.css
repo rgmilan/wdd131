@@ -126,17 +126,13 @@ input[type="submit"]:hover {
     border-radius: 6px;
 }
 
-.confirmation h2 {
-    margin-bottom: 1rem;
-}
-
+.confirmation h2,
 .confirmation p {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .confirmation a {
     display: inline-block;
-    margin-top: 1rem;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 0.75rem 1rem;

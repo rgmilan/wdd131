@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RG Built Corp review confirmation page with localStorage counter.">
+    <meta name="description" content="Review confirmation page for RG Built Corp product review assignment.">
     <meta name="author" content="Argy Milan">
     <title>Review Confirmation | RG Built Corp</title>
     <link rel="stylesheet" href="styles/form.css">
