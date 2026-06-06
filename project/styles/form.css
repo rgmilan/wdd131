@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #00a0ce;
+    --accent-color: #ecac00;
+    --form-bg: #e6eef1;
+    --text-color: #000000;
+    --white: #ffffff;
+    --border-color: #555555;
+    --dark-blue: #003f52;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 6px solid var(--accent-color);
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+main {
+    max-width: 760px;
+    margin: 2rem auto;
+}
+
+form,
+.confirmation {
+    background-color: var(--form-bg);
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+label,
+legend {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    color: var(--dark-blue);
+    font-size: 0.9rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+fieldset {
+    border: none;
+    margin-top: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.rating input {
+    display: block;
+    margin: 0.5rem auto;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label input {
+    width: 24px;
+    height: 24px;
+}
+
+textarea {
+    min-height: 140px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin-bottom: 1rem;
+}
+
+.confirmation p {
+    margin-bottom: 1rem;
+}
+
+.confirmation a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+}
+
+.confirmation a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 6px solid var(--accent-color);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 1rem auto;
+    }
+
+    form,
+    .confirmation {
+        padding: 1.2rem;
+    }
+
+    .rating label {
+        font-size: 0.85rem;
+    }
+}
